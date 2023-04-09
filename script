@@ -1,0 +1,9 @@
+import sys
+
+def print_args():
+    script_name = sys.argv[0]
+    if len(sys.argv) > 1:
+        variables = ' '.join(sys.argv[1:])
+        print(f"The script is {script_name}. The variables are {variables}.")
+    else:
+        print(f"The script is {script_name}.")
